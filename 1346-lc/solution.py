@@ -2,7 +2,15 @@ from typing import List
 
 class Solution:
         def checkIfExist(self, arr: List[int]) -> bool:
-            return None
+            # start beginning of the array
+            # compare the anchor to the rest of the array
+            # arr[i] == 2 * arr[j]
+            for i in range(len(arr)):
+                 for j in range(i + 1, len(arr)):
+                      if arr[i] == 2 * arr[j]:
+                           return True
+            
+            return False
 
 if __name__ == "__main__":
     input1 = [10,2,5,3]
