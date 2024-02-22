@@ -1,6 +1,8 @@
+from typing import List
+
 class Solution:
         def checkIfExist(self, arr: List[int]) -> bool:
-            return False
+            return None
 
 if __name__ == "__main__":
     input1 = [10,2,5,3]
